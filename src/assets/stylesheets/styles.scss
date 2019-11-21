@@ -1,0 +1,150 @@
+@import "_normalize";
+
+body {
+  font-family: Tahoma, Arial, Verdana;
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin inline_block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header {
+  background-color: #6d4c41;
+  width: 100%;
+  padding: 10px 20px;
+
+  a {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 7px 10px;
+    @include inline_block;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+}
+
+#minesweeper {
+  padding-top: 10px;
+
+  form {
+    margin-left: 20px;
+
+    .input_field {
+      @include inline_block;
+      margin-right: 10px;
+
+      label {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 0.9rem;
+      }
+
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  #minefield {
+    background: #bdbdbd;
+    @include inline_block;
+    margin: 20px;
+    padding: 6px;
+    border: 2px solid #ffffff;
+    border-right-color: #7b7b7b;
+    border-bottom-color: #7b7b7b;
+
+    table {
+      border: 2px solid #7b7b7b;
+      border-right-color: #ffffff;
+      border-bottom-color: #ffffff;
+
+      tr {
+        td {
+          background: #bdbdbd;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          border: 2px solid #ffffff;
+          border-right-color: #7b7b7b;
+          border-bottom-color: #7b7b7b;
+          font-weight: bold;
+
+          &.res_0 {
+            background: #bdbdbd;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+          &.res_1 {
+            color: #0000ff;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+          &.res_2 {
+            color: #007b00;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+          &.res_3 {
+            color: #ff0000;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+          &.res_4 {
+            color: #00007b;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+          &.res_5 {
+            color: #7b0000;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+          &.res_6 {
+            color: #007b7b;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+          &.res_7 {
+            color: #000000;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+          &.res_8 {
+            color: #7b7b7b;
+            border-top: 0;
+            border-right: 1px solid #7b7b7b;
+            border-bottom: 1px solid #7b7b7b;
+            border-left: 0;
+          }
+
+
+
+
+
+
+        }
+      }
+    }
+  }
+}

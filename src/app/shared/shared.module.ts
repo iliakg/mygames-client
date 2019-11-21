@@ -3,7 +3,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {CommonModule} from '@angular/common'
 import {RouterModule} from '@angular/router'
 
-import {FormErrorsComponent} from './components/form-errors/form-errors.component'
 import {LoaderComponent} from './components/loader/loader.component'
 import {HeaderComponent} from './components/header/header.component'
 
@@ -15,7 +14,6 @@ import {HeaderComponent} from './components/header/header.component'
     RouterModule
   ],
   declarations: [
-    FormErrorsComponent,
     LoaderComponent,
     HeaderComponent
   ],
@@ -24,7 +22,6 @@ import {HeaderComponent} from './components/header/header.component'
     ReactiveFormsModule,
     CommonModule,
     HeaderComponent,
-    FormErrorsComponent,
     LoaderComponent
   ]
 })

@@ -1,14 +1,5 @@
-export interface ResponseError {
-  code: number
-  item: string
-  msg: string
+export interface Battlestate {
   status: string
-}
-
-export interface User {
-  id: number
-  email: string
-  username?: string
-  password?: string
-  token?: string
+  opts: {cols: number, rows: number, bombs_count: number}
+  opened_cells: {}
 }
