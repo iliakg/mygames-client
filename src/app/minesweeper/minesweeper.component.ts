@@ -34,6 +34,12 @@ export class MinesweeperComponent implements OnInit {
     })
   }
 
+  cellClick(i, j) {
+    const element = document.getElementById(i + '_' + j)
+    element.className = 'res_3'
+    element.innerText = '3'
+  }
+
   onSubmit() {
     this.form.disable()
 
