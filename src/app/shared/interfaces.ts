@@ -3,3 +3,8 @@ export interface Battlestate {
   opts: {cols: number, rows: number, bombs_count: number}
   opened_cells: {}
 }
+
+export interface OpenedCells {
+  status: string
+  opened_cells: {}
+}
